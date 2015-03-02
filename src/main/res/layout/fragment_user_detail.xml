@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.dquid.baytektestapp.UserDetailFragment"
+    android:background="#ffe9ffff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="50dp"
+              android:gravity = "center_horizontal"
+              android:textSize = "@dimen/abc_text_size_headline_material"
+
+              android:text="USER SUMMARY"
+              android:id="@+id/UserSummary"
+        android:capitalize="none" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POKE A BUDDY"
+        android:id="@+id/pokebutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/parameterEditText"
+        android:layout_marginBottom="73dp"
+        android:layout_gravity="left|bottom" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARE ON SOCIAL NETWORK"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/parameterEditText"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="left|bottom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/responseText1"
+        android:text="Total games played:"
+        android:layout_below="@+id/responseText2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="170dp"
+        android:layout_gravity="left|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/responseText2"
+        android:text="Best score:"
+        android:layout_marginTop="220dp"
+        android:layout_below="@+id/parameterEditText"
+        android:layout_alignEnd="@+id/responseText3"
+        android:layout_gravity="left|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/responseText2"
+        android:text="Credits remaining:"
+        android:layout_marginTop="270dp"
+        android:layout_below="@+id/parameterEditText"
+        android:layout_alignEnd="@+id/responseText3"
+        android:layout_gravity="left|top" />
+
+
+</FrameLayout>
